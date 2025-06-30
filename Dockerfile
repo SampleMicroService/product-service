@@ -5,7 +5,7 @@ FROM openjdk:17
 EXPOSE 8081
 
 # Add the JAR file to the container (copying it to the root directory here)
-ADD target/order-service-0.0.1-SNAPSHOT.jar /product-service-0.0.1-SNAPSHOT.jar
+ADD target/product-service-0.0.1-SNAPSHOT.jar /product-service-0.0.1-SNAPSHOT.jar
 
 # Set the entry point to run the Spring Boot application
 ENTRYPOINT ["java", "-jar", "/product-service-0.0.1-SNAPSHOT.jar"]
